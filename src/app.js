@@ -12,5 +12,5 @@ app.on('ready', ()=>{
     width: 580,
     height: 365
   });
-  mainWindow.loadUrl('file://' + __dirname + '/renderer/index.html');
+  mainWindow.loadURL(`file://${__dirname}/renderer/index.html`);
 });
