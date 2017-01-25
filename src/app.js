@@ -1,14 +1,13 @@
 'use strict';
-import 'babel-polyfill';
 
 import {app, BrowserWindow} from 'electron';
 
 let mainWindow = null;
-app.on('window-all-closed', () => {
+app.on('window-all-closed', ()=>{
   app.quit();
 });
 
-app.on('ready', () => {
+app.on('ready', ()=>{
   mainWindow = new BrowserWindow({
     width: 580,
     height: 365
