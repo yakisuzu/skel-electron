@@ -12,5 +12,6 @@ app.on('ready', ()=>{
     width: 580,
     height: 365
   });
-  mainWindow.loadURL(`file://${__dirname}/renderer/index.html`);
+  mainWindow.loadURL(`file://${__dirname}/index.html`);
+  mainWindow.webContents.openDevTools({mode: 'detach'});
 });

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "text",
   "readme": "readme.md",
-  "main": "dest/app.js",
+  "main": "app/app.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/yakisuzu/skel-electron.git"
@@ -11,8 +11,8 @@
   "scripts": {
     "electron": "electron .",
     "eslint": "eslint src/",
-    "babel": "babel src/ --out-dir dest/",
-    "babel-watch": "babel src/ --out-dir dest/ --watch"
+    "babel": "babel src/ --out-dir app/",
+    "babel-watch": "babel src/ --out-dir app/ --watch"
   },
   "author": "yakisuzu",
   "license": "MIT",
@@ -28,7 +28,8 @@
     "babel-preset-react": "^6.16.0",
     "electron": "^1.4.14",
     "eslint": "^3.13.1",
-    "react": "^15.4.2"
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   },
   "babel": {
     "presets": [
