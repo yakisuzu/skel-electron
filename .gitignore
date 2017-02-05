@@ -1,5 +1,7 @@
+.DS_Store
 node_modules/
+npm-debug.log
 app/app.js
 app/bootstrap.js
 app/renderer/
-npm-debug.log
+build/

@@ -3,21 +3,27 @@
   "version": "1.0.0",
   "description": "text",
   "readme": "readme.md",
-  "main": "app/app.js",
+  "main": "build.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/yakisuzu/skel-electron.git"
   },
+  "bugs": {
+    "url": "https://github.com/yakisuzu/skel-electron/issues"
+  },
+  "homepage": "https://github.com/yakisuzu/skel-electron#readme",
+  "keywords": [],
   "scripts": {
     "electron": "electron .",
     "eslint": "eslint src/",
     "babel": "babel src/ --out-dir app/",
-    "babel-watch": "babel src/ --out-dir app/ --watch"
+    "babel-watch": "babel src/ --out-dir app/ --watch",
+    "pkg-mac": "node build.js mac",
+    "pkg-win32": "node build.js win32"
   },
   "author": "yakisuzu",
   "license": "MIT",
   "devDependencies": {
-    "asar": "^0.13.0",
     "babel-cli": "^6.14.0",
     "babel-eslint": "^7.1.1",
     "babel-plugin-transform-async-to-generator": "^6.16.0",
@@ -27,6 +33,7 @@
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-react": "^6.16.0",
     "electron": "^1.4.14",
+    "electron-packager": "^8.5.1",
     "eslint": "^3.13.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
