@@ -1,4 +1,5 @@
 node_modules/
 app/app.js
+app/bootstrap.js
 app/renderer/
 npm-debug.log
